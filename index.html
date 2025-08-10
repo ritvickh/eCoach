@@ -1,0 +1,108 @@
+<html>
+
+<head>
+<title>Home</title>
+
+<style>
+    *{box-sizing:border-box; padding:0; margin:0;}
+    .navbar{display:flex; background-color: rgb(220, 220, 220); align-items:center; justify-content:space-between; padding-left:30px; padding-right:30px; padding-top:10px; padding-bottom:10px;}
+    .name{color:cornflowerblue; font-weight:900; font-size:20px}
+    body{ font-family: "Mozilla Headline", sans-serif;}
+    .navsign{background-color:indianred; color:white; border:none; border-radius:10px; padding:15px}
+    .subnav{display:flex; align-items:center; justify-content:space-evenly; }
+    .navlink{display:flex; text-decoration:none; color:black; font-size:15px; padding:5px}
+    .desc{width:100%; display:flex;}
+    .desc-text{width:50%; padding-left:40px; padding-top:40px}
+    .featurecard-parent{display:flex;justify-content:space-evenly;}
+    .featurecard{border: 1px solid black; border-radius:2px; padding:20px; width:30%; margin:20px; text-align:center; box-shadow:2px 2px 20px gray}
+    .courses-parent{display:flex; width:100%; justify-content:space-evenly}
+    .courses{border:3px outset black; width:20%; box-shadow:1px 1px 50px rgb(0, 0, 0); margin-bottom:50px}
+    .joinbutton{background-color:cornflowerblue; padding:10px; font-size:20px; margin-top:10px; margin-bottom:10px; margin-left:5px; border-radius:15px; font-family: "Mozilla Headline", sans-serif;}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--Navbar-->
+<marquee style="background-color:rgb(157, 157, 157); ">Get 20% OFF on any course until the end of December</marquee>
+<nav class="navbar">
+    <p class="name">eCoach</p>
+    <div class="subnav">
+    <a href="" class="navlink">Courses</a>
+    <a href="" class="navlink">Demos</a>
+    <a href="" class="navlink">Blog</a>
+    <a href="" class="navlink">Contacts</a>
+    <button class="navsign">Sign Up</a>
+    </div>
+</nav>
+
+<!--Header-->
+<div class="desc">
+    <div class="desc-text">
+    <p style="font-size:80px; font-weight:900;">Education That Prepares You For What's Next</p>
+    <p style="font-size:25px">Start, switch or advance your career with more than 5,400 courses, professional certificates, and degrees from world-renowned universities and companies.</p>
+    </div>
+    <img src="businessman.png">
+</div>
+
+<!--Features-->
+
+<div class="featurecard-parent">
+    <div class="featurecard">
+        <h1>24/7 Help</h1>
+        <p>Our large network of mentors can help motivate and guide you anytime, no matter where you are on your journey.</p>
+        <a href="">More about this</a>
+      </div>
+    <div class="featurecard">
+        <h1>1-hour avg. response time</h1>
+        <p>Get all your queries answered quickly and unhassled in a span of one hour or lesser.</p><br>
+        <a href="">More about this</a>
+      </div>
+    <div class="featurecard">
+        <h1>Highly Vetted</h1>
+        <p>Our mentors complete a 5-step hiring process and usually a bachelor's degree program themselves.</p><br>
+        <a href="">More about this</a>
+      </div>            
+</div>
+
+<!--Courses-->
+
+<h1 style="font-size:50px; text-align:center; padding:30px; text-shadow:5px 5px 10px gray">Our Top Courses:</h1>
+
+<div class="courses-parent">
+    <div class="courses">
+        <img src="datastructures.jpg" style="width:374px">
+        <h2>Data Structures and Algorithms</h2>
+        <p>Starting From 9th Grade</p>
+        <p>2000+ Applications</p>
+        <button class="joinbutton">Register Now (20% Off!)</button>
+    </div>
+        <div class="courses">
+        <img src="ml.jpg" style="width:374px">
+        <h2>Machine Learning Foundations</h2>
+        <p>Starting From 9th Grade</p>
+        <p>6200+ Applications</p>
+        <button class="joinbutton">Register Now (20% Off!)</button>
+    </div>
+    <div class="courses">
+        <img src="google.jpg" style="width:374px">
+        <h2>Google Professional Certificate</h2>
+        <p>Starting From 1st Year of College</p>
+        <p>8100+ Applications</p>
+        <button class="joinbutton">Register Now (20% Off!)</button>
+    </div>
+    <div class="courses">
+        <img src="ai regression.jpg" style="width:374px">
+        <h2>Supervised ML Regression</h2>
+        <p>Starting From 1st Year of College</p>
+        <p>1800+ Applications</p>
+        <button class="joinbutton">Register Now (20% Off!)</button>
+    </div>
+
+</div>
+
+</body>
+
+</html>
