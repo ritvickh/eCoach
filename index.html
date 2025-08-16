@@ -7,26 +7,33 @@
     *{box-sizing:border-box; padding:0; margin:0;}
     .navbar{display:flex; background-color: rgb(220, 220, 220); align-items:center; justify-content:space-between; padding-left:30px; padding-right:30px; padding-top:10px; padding-bottom:10px;}
     .name{color:cornflowerblue; font-weight:900; font-size:20px}
-    body{ font-family: "Mozilla Headline", sans-serif;}
+    body{font-family: "Inter", sans-serif;}
     .navsign{background-color:indianred; color:white; border:none; border-radius:10px; padding:15px}
     .subnav{display:flex; align-items:center; justify-content:space-evenly; }
     .navlink{display:flex; text-decoration:none; color:black; font-size:15px; padding:5px}
     .desc{width:100%; display:flex;}
     .desc-text{width:50%; padding-left:40px; padding-top:40px}
     .featurecard-parent{display:flex;justify-content:space-evenly;}
-    .featurecard{border: 1px solid black; border-radius:2px; padding:20px; width:30%; margin:20px; text-align:center; box-shadow:2px 2px 20px gray}
-    .courses-parent{display:flex; width:100%; justify-content:space-evenly}
-    .courses{border:3px outset black; width:20%; box-shadow:1px 1px 50px rgb(0, 0, 0); margin-bottom:50px}
-    .joinbutton{background-color:cornflowerblue; padding:10px; font-size:20px; margin-top:10px; margin-bottom:10px; margin-left:5px; border-radius:15px; font-family: "Mozilla Headline", sans-serif;}
+    .featurecard{border: 1px solid black; border-radius:6px; padding:20px; width:30%; margin:20px; text-align:center; box-shadow:2px 2px 20px gray}
+    .courses-parent{display:flex; width:100%; justify-content:space-evenly; flex-wrap:wrap;}
+    .courses{border:3px outset black; width:20%; box-shadow:0px 0px 80px gray; margin-bottom:50px; margin:30px}
+    .joinbutton{background-color:cornflowerblue; padding:15px; font-size:20px; margin-top:10px; margin-bottom:10px; margin-left:5px; border-radius:15px; font-family: "Inter", sans-serif; font-weight:700; }
+    .aboutus-parent{width:97%; display:flex; background-color:rgb(235, 235, 235); border:1px solid black; margin:20px;}
+    .aboutus-picture{width:50%; margin:50px;}
+    .aboutus-text{width:70%}
+    .aboutus-text > h1 {text-align:center; font-size:50px; margin:20px}
+    .aboutus-text > p {font-size:30px; padding-top:50px}
+    .aboutus-text > ul {font-size:30px; padding-top:50px}
+    .statistics{background-color:lightblue; text-align:center; padding:50px; display:flex; justify-content:space-evenly}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <!--Navbar-->
-<marquee style="background-color:rgb(157, 157, 157); ">Get 20% OFF on any course until the end of December</marquee>
+<marquee style="background-color:rgb(157, 157, 157); ">Get upto 50% OFF on any course until the end of December</marquee>
 <nav class="navbar">
     <p class="name">eCoach</p>
     <div class="subnav">
@@ -41,7 +48,7 @@
 <!--Header-->
 <div class="desc">
     <div class="desc-text">
-    <p style="font-size:80px; font-weight:900;">Education That Prepares You For What's Next</p>
+    <p style="font-size:80px; font-weight:700;">Education That Prepares You For What's Next</p>
     <p style="font-size:25px">Start, switch or advance your career with more than 5,400 courses, professional certificates, and degrees from world-renowned universities and companies.</p>
     </div>
     <img src="businessman.png">
@@ -84,23 +91,85 @@
         <h2>Machine Learning Foundations</h2>
         <p>Starting From 9th Grade</p>
         <p>6200+ Applications</p>
-        <button class="joinbutton">Register Now (20% Off!)</button>
+        <button class="joinbutton">Register Now (10% Off!)</button>
     </div>
     <div class="courses">
         <img src="google.jpg" style="width:100%">
         <h2>Google Professional Certificate</h2>
         <p>Starting From 1st Year of College</p>
         <p>8100+ Applications</p>
-        <button class="joinbutton">Register Now (20% Off!)</button>
+        <button class="joinbutton">Register Now (50% Off!)</button>
     </div>
     <div class="courses">
         <img src="ai regression.jpg" style="width:100%">
         <h2>Supervised ML Regression</h2>
         <p>Starting From 1st Year of College</p>
         <p>1800+ Applications</p>
-        <button class="joinbutton">Register Now (20% Off!)</button>
+        <button class="joinbutton">Register Now (30% Off!)</button>
+    </div>
+        <div class="courses">
+        <img src="dataanalytics.jpg" style="width:100%;">
+        <h2>Elementals Of Data Analytics</h2>
+        <p>Starting From 11th Grade</p>
+        <p>800+ Applications</p>
+        <button class="joinbutton">Register Now (40% Off!)</button>
+    </div>
+        <div class="courses">
+        <img src="algorithms.jpg" style="width:100%">
+        <h2>Advanced Learning Algorithms</h2>
+        <p>Starting From 11th Grade</p>
+        <p>6200+ Applications</p>
+        <button class="joinbutton">Register Now (10% Off!)</button>
+    </div>
+    <div class="courses">
+        <img src="genai.jpg" style="width:100%">
+        <h2>Introduction To Generative AI</h2>
+        <p>Starting From 6th Grade</p>
+        <p>12900+ Applications</p>
+        <button class="joinbutton">Register Now (50% Off!)</button>
+    </div>
+    <div class="courses">
+        <img src="neural.jpg" style="width:100%">
+        <h2>Elements Of Artificial Intelligence</h2>
+        <p>Starting From 6th Grade</p>
+        <p>7700+ Applications</p>
+        <button class="joinbutton">Register Now (35% Off!)</button>
     </div>
 
+
+</div>
+
+<!--About Us-->
+<div class="aboutus-parent">
+    <div class="aboutus-picture">
+        <img src="manatdesk.jpg" alt="About Us" style="width:90%; border:10px outset goldenrod">
+    </div>
+    <div class="aboutus-text">
+        <h1><u>Ways We Can Help</u></h1>
+        <p>Our learning platform is a dynamic and interactive online education hub designes to meet the needs of students, educators and lifelong learners. We believe that learning should be accessible to everyone.</p>
+        <ul>
+            <li>Immersive learning experience</li>
+            <li>Access to a wide range of resources</li>
+            <li>Flexibility and Convenience</li>
+        </ul>
+    </div>
+    <button class="joinbutton" style="height:100px;">View Our Courses</button>
+</div>
+
+<div class="statistics">
+    <h1>Building a lifelong learning community</h1>
+    <div class="statistics-child">
+        <h1>1.5M</h1>
+        <p>Students registered for our courses</p>
+    </div>
+    <div class="statistics-child">
+        <h1>87%</h1>
+        <p>Our students have the highest chance of getting hired</p>
+    </div>
+    <div class="statistics-child">
+        <h1>364+</h1>
+        <p>High-quality teachers offering courses and videos</p>
+    </div>
 </div>
 
 </body>
