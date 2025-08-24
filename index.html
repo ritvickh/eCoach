@@ -1,6 +1,7 @@
 <html>
 
 <head>
+
 <title>Home</title>
 
 <style>
@@ -13,6 +14,7 @@
     .navlink{display:flex; text-decoration:none; color:black; font-size:15px; padding:5px}
     .desc{width:100%; display:flex;}
     .desc-text{width:50%; padding-left:40px; padding-top:40px}
+    .desc-text-head{font-size:80px; font-weight:700;}
     .featurecard-parent{display:flex;justify-content:space-evenly;}
     .featurecard{border: 1px solid black; border-radius:6px; padding:20px; width:30%; margin:20px; text-align:center; box-shadow:2px 2px 20px gray}
     .courses-parent{display:flex; width:100%; justify-content:space-evenly; flex-wrap:wrap;}
@@ -25,10 +27,36 @@
     .aboutus-text > p {font-size:30px; padding-top:50px}
     .aboutus-text > ul {font-size:30px; padding-top:50px}
     .statistics{background-color:lightblue; text-align:center; padding:50px; display:flex; justify-content:space-evenly}
+    .aboutus-parent .joinbutton {margin-top:50px; padding:50px; text-align:center}
+    .mob-navbar{display:none}
+    @media screen and (min-width:0px) and (max-width:768px)
+    {
+        .navbar{display:none;}
+        .mob-navbar{display:flex; background-color:rgb(220, 220, 220); padding-left:30px; padding-right:30px; padding-top:10px; padding-bottom:10px; align-items:center; justify-content:space-between;}
+        .desc-text-head{font-size:55px;}
+        .desc-text-small{font-size:20px}
+        .desc{flex-direction:column;}
+        .featurecard-parent{flex-direction:column; align-items:center}
+        .featurecard{width:80%}
+        .statistics{flex-direction:column}
+        .aboutus-parent{flex-direction:column; width:100%; padding-left:0px; text-align:center; margin:0px; justify-content: center;}
+        .aboutus-picture{width:100%; margin:0px}
+        .courses{margin:60px; width:80%; padding:5px; text-align:center; justify-content:space-evenly}
+        .desc img {display:none}
+        .aboutus-parent .joinbutton {padding:0px}
+        .statistics-child{padding:20px}
+        .icon{display:none}
+        .mobile-sub-nav{position:absolute; top: 62px; right:0px; display:none; flex-direction:column; gap:40px; font-size:24px; background-color:rgb(220, 220, 220); height:100%; width:50%; text-align:center;}
+        .mobile-sub-nav a{text-decoration:none; color:black; font-weight:600} 
+        .icon:checked ~ .mobile-sub-nav{display:flex}
+        .aboutus-text{text-align:center; margin-left:40px}
+    }
+
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -45,11 +73,26 @@
     </div>
 </nav>
 
+<nav class="mob-navbar">
+    <p class="name">eCoach</p>
+    <input type="checkbox" class="icon" id="icon">
+    <label for="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg>
+    </label>
+    <div class="mobile-sub-nav">
+        <a href="#">Courses</a>
+        <a href="#">Demos</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </div>
+
+</nav>
+
 <!--Header-->
 <div class="desc">
     <div class="desc-text">
-    <p style="font-size:80px; font-weight:700;">Education That Prepares You For What's Next</p>
-    <p style="font-size:25px">Start, switch or advance your career with more than 5,400 courses, professional certificates, and degrees from world-renowned universities and companies.</p>
+    <p class="desc-text-head">Education That Prepares You For What's Next</p>
+    <p class="desc-text-small">Start, switch or advance your career with more than 5,400 courses, professional certificates, and degrees from world-renowned universities and companies.</p>
     </div>
     <img src="businessman.png">
 </div>
@@ -152,8 +195,8 @@
             <li>Access to a wide range of resources</li>
             <li>Flexibility and Convenience</li>
         </ul>
-    </div>
     <button class="joinbutton" style="height:100px;">View Our Courses</button>
+    </div>
 </div>
 
 <div class="statistics">
